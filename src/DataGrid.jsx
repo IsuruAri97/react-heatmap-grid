@@ -35,7 +35,8 @@ const DataGrid = ({
                 textAlign: yLabelTextAlign,
                 paddingRight: "5px",
                 paddingTop: `${height / 3.7}px`,
-                width: `${yLabelWidth}px`
+                width: `${yLabelWidth}px`,
+                writingMode: 'sideways-lr'
               }}
             >
               {displayYLabels && y}
