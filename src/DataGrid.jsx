@@ -39,6 +39,7 @@ const DataGrid = ({
                 writingMode: 'sideways-lr',
                 fontSize: '12px',
                 fontFamily: "'Helvetica Neue', 'Helvetica', 'sans-serif'",
+                color: '#55606E',
               }}
             >
               {displayYLabels && y}

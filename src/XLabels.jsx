@@ -15,6 +15,8 @@ function XLabels({ labels, width, labelsVisibility, squares, height, yWidth }) {
             width: squares ? `${height + 1}px` : width,
             fontSize: '12px',
             fontFamily: "'Helvetica Neue', 'Helvetica', 'sans-serif'",
+            color: '#55606E',
+            padding: '8px 0px',
             visibility:
               labelsVisibility && !labelsVisibility[i] ? "hidden" : "visible",
           }}
