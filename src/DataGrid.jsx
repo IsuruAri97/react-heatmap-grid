@@ -24,7 +24,7 @@ const DataGrid = ({
   const flatArray = data.reduce((i, o) => [...o, ...i], []);
   const max = Math.max(...flatArray);
   const min = Math.min(...flatArray);
-
+  console.log(yLabelWrintingMode, "yLabelWrintingMode")
   return (
     <div>
       {yLabels.map((y, yi) => (
