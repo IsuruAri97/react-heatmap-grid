@@ -18,12 +18,13 @@ const DataGrid = ({
   squares,
   cellRender,
   cellStyle,
-  title
+  title,
+  yLabelWrintingMode,
 }) => {
   const flatArray = data.reduce((i, o) => [...o, ...i], []);
   const max = Math.max(...flatArray);
   const min = Math.min(...flatArray);
-
+  
   return (
     <div>
       {yLabels.map((y, yi) => (
@@ -36,7 +37,7 @@ const DataGrid = ({
                 paddingRight: "5px",
                 paddingTop: `${height / 3.7}px`,
                 width: `${yLabelWidth}px`,
-                writingMode: 'sideways-lr'
+                writingMode:  yLabelWrintingMode || 'horizontal-tb'
               }}
             >
               {displayYLabels && y}
