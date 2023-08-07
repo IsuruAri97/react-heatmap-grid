@@ -37,8 +37,8 @@ const DataGrid = ({
                 paddingTop: `${height / 3.7}px`,
                 width: `${yLabelWidth}px`,
                 writingMode: 'sideways-lr',
-                fontSize: '14px',
-                fontFamily: "'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'",
+                fontSize: '12px',
+                fontFamily: "'Helvetica Neue', 'Helvetica', 'sans-serif'",
               }}
             >
               {displayYLabels && y}
@@ -54,6 +54,8 @@ const DataGrid = ({
                 width: squares ? `${height}px` : undefined,
                 flex: squares ? "none" : 1,
                 textAlign: "center",
+                fontSize: '12px',
+                fontFamily: "'Helvetica Neue', 'Helvetica', 'sans-serif'",
               },
               cellStyle(background, value, min, max, data, xi, yi)
             );
@@ -64,7 +66,7 @@ const DataGrid = ({
                 key={`${xi}_${yi}`}
                 style={style}
               >
-                <div style={{ paddingTop: `${height / 3.7}px` }}>
+                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
                   {cellRender(value, x, y)}
                 </div>
               </div>
