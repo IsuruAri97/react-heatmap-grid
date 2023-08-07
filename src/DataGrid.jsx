@@ -36,7 +36,6 @@ const DataGrid = ({
                 paddingRight: "5px",
                 paddingTop: `${height / 3.7}px`,
                 width: `${yLabelWidth}px`,
-                writingMode: 'sideways-lr',
                 fontSize: '12px',
                 fontFamily: "'Helvetica Neue', 'Helvetica', 'sans-serif'",
                 color: '#55606E',
