@@ -13,6 +13,8 @@ function XLabels({ labels, width, labelsVisibility, squares, height, yWidth }) {
             flex: squares ? "none" : 1,
             textAlign: "center",
             width: squares ? `${height + 1}px` : width,
+            fontSize: '12px',
+            fontFamily: "'Helvetica Neue', 'Helvetica', 'sans-serif'",
             visibility:
               labelsVisibility && !labelsVisibility[i] ? "hidden" : "visible",
           }}

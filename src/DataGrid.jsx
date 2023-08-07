@@ -51,11 +51,9 @@ const DataGrid = ({
                 cursor: `${cursor}`,
                 margin: "1px 1px 0 0",
                 height,
-                width: squares ? `${height}px` : undefined,
+                width: squares ? `${height}px` : x,
                 flex: squares ? "none" : 1,
                 textAlign: "center",
-                fontSize: '12px',
-                fontFamily: "'Helvetica Neue', 'Helvetica', 'sans-serif'",
               },
               cellStyle(background, value, min, max, data, xi, yi)
             );
@@ -66,7 +64,7 @@ const DataGrid = ({
                 key={`${xi}_${yi}`}
                 style={style}
               >
-                <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
+                <div>
                   {cellRender(value, x, y)}
                 </div>
               </div>
