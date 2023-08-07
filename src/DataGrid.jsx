@@ -24,7 +24,7 @@ const DataGrid = ({
   const flatArray = data.reduce((i, o) => [...o, ...i], []);
   const max = Math.max(...flatArray);
   const min = Math.min(...flatArray);
-  
+
   return (
     <div>
       {yLabels.map((y, yi) => (
@@ -95,7 +95,8 @@ DataGrid.propTypes = {
   squares: PropTypes.bool,
   cellRender: PropTypes.func.isRequired,
   cellStyle: PropTypes.func.isRequired,
-  title: PropTypes.func
+  title: PropTypes.func,
+  yLabelWrintingMode: PropTypes.string.isRequired
 };
 
 DataGrid.defaultProps = {
