@@ -38,7 +38,7 @@ const DataGrid = ({
                 width: `${yLabelWidth}px`,
                 writingMode: 'sideways-lr',
                 fontSize: '14px',
-                fontFamily: "'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'";
+                fontFamily: "'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif'",
               }}
             >
               {displayYLabels && y}
