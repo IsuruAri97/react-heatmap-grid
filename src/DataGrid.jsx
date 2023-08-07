@@ -19,13 +19,11 @@ const DataGrid = ({
   cellRender,
   cellStyle,
   title,
-  yLabelWritingMode,
 }) => {
   const flatArray = data.reduce((i, o) => [...o, ...i], []);
   const max = Math.max(...flatArray);
   const min = Math.min(...flatArray);
 
-  console.log(yLabelWritingMode, "yLabelWritingMode")
   return (
     <div>
       {yLabels.map((y, yi) => (
@@ -38,7 +36,9 @@ const DataGrid = ({
                 paddingRight: "5px",
                 paddingTop: `${height / 3.7}px`,
                 width: `${yLabelWidth}px`,
-                writingMode:  yLabelWritingMode || 'sideways-lr'
+                writingMode: 'sideways-lr',
+                fontSize: '14px',
+                fontFamily: 'Helvetica Neue',
               }}
             >
               {displayYLabels && y}
@@ -97,7 +97,6 @@ DataGrid.propTypes = {
   cellRender: PropTypes.func.isRequired,
   cellStyle: PropTypes.func.isRequired,
   title: PropTypes.func,
-  yLabelWritingMode: PropTypes.string.isRequired
 };
 
 DataGrid.defaultProps = {
