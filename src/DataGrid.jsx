@@ -31,7 +31,7 @@ const DataGrid = ({
           <FixedBox width={yLabelWidth}>
             <div
               style={{
-                position: "absolute",
+                position: "relative",
                 textAlign: yLabelTextAlign,
                 paddingRight: "5px",
                 paddingTop: `${height / 3.7}px`,
@@ -40,6 +40,9 @@ const DataGrid = ({
                 fontSize: '12px',
                 fontFamily: "'Helvetica Neue', 'Helvetica', 'sans-serif'",
                 color: '#55606E',
+                transform: 'rotate(-90deg)',
+                top: '10px',
+                right: '5px',
               }}
             >
               {displayYLabels && y}
@@ -52,7 +55,7 @@ const DataGrid = ({
                 cursor: `${cursor}`,
                 margin: "1px 1px 0 0",
                 height,
-                width: squares ? `${height}px` : x,
+                width: squares ? `${height}px` : undefined,
                 flex: squares ? "none" : 1,
                 textAlign: "center",
               },
