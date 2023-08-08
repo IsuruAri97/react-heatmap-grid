@@ -40,7 +40,7 @@ const DataGrid = ({
                 fontFamily: "proxima-nova",
                 color: '#55606E',
                 transform: 'rotate(-90deg)',
-                top: '10px',
+                top: '15px',
                 right: '5px',
               }}
             >
