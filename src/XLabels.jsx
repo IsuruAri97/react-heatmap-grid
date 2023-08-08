@@ -14,7 +14,7 @@ function XLabels({ labels, width, labelsVisibility, squares, height, yWidth }) {
             textAlign: "center",
             width: squares ? `${height + 1}px` : width,
             fontSize: '12px',
-            fontFamily: "'Helvetica Neue', 'Helvetica', 'sans-serif'",
+            fontFamily: "proxima-nova",
             color: '#55606E',
             padding: '8px 0px',
             visibility:
