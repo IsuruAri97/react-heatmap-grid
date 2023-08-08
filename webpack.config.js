@@ -37,7 +37,7 @@ module.exports = {
           }
         }
       }, {
-        test: /\.scss$/,
+        test: /\.css$/,
         use: [
           {
             loader: 'style-loader', // creates style nodes from JS strings
@@ -46,6 +46,15 @@ module.exports = {
             loader: 'css-loader', // translates CSS into CommonJS
           },
         ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: 'fonts/[name].[ext]', // Output path for fonts
+          },
+        },
       },
     ],
   },
