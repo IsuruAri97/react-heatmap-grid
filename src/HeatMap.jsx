@@ -105,6 +105,7 @@ HeatMap.defaultProps = {
   cellStyle: (background, value, min, max) => ({
     background,
     opacity: (value - min) / (max - min) || 0,
+    fontFamily: 'Arial, sans-serif',
   })
 };
 
